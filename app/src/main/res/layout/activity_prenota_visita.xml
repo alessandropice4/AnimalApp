@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/nomeanimaleprenotazione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Animale"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/specieprenotazione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specie Animale"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/nomeanimaleprenotazione"/>
+
+
+
+
+
+    <EditText
+        android:id="@+id/tipodiesame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specieprenotazione"
+        android:layout_marginTop="40dp"
+        android:hint="Tipo di esame (Vaccinazione, Sverminazione...)" />
+
+    <EditText
+        android:id="@+id/preferenzadata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specieprenotazione"
+        android:layout_marginTop="195dp"
+        android:hint="Orario" />
+
+    <EditText
+        android:id="@+id/ora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specieprenotazione"
+        android:layout_marginTop="120dp"
+        android:hint="Data preferita" />
+
+    <Button
+        android:id="@+id/inviaprenotazione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specieprenotazione"
+        android:layout_marginTop="300dp"
+        android:text="Invia Prenotazione" />
+
+    <Button
+        android:id="@+id/visualizzaprenotazioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specieprenotazione"
+        android:layout_marginTop="367dp"
+        android:text="Lista Prenotazioni" />
+</RelativeLayout>

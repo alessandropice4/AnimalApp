@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/titolosegnalazione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titolo Segnalazione"
+        android:layout_marginTop="50dp"/>
+
+
+    <EditText
+        android:id="@+id/testosegnalazione"
+        android:layout_width="456dp"
+        android:layout_height="201dp"
+        android:layout_below="@+id/titolosegnalazione"
+        android:layout_marginTop="67dp"
+        android:hint="Oggetto" />
+
+    <EditText
+        android:id="@+id/longitudine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/testosegnalazione"
+        android:layout_marginTop="258dp"
+        android:hint="Longitudine" />
+
+    <EditText
+        android:id="@+id/latitudine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/testosegnalazione"
+        android:layout_marginTop="212dp"
+        android:hint="Latitudine" />
+
+    <Button
+        android:id="@+id/segnala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/longitudine"
+        android:layout_marginTop="194dp"
+        android:text="Invia Segnalazione" />
+
+    <Button
+        android:id="@+id/allegaposizione"
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testosegnalazione"
+        android:layout_marginTop="152dp"
+        android:text="Allega Posizione" />
+
+</RelativeLayout>
